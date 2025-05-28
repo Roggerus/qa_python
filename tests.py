@@ -12,7 +12,9 @@ class TestBooksCollector:
         'Властелин колец',
         'Гарри Поттер',
         'Левиафан',
-        'Незнайка на луне'
+        'Незнайка на луне',
+        'А',
+        'А' * 40
     ])
 
     def test_add_new_book_valid_name(self, collector, book_name):
