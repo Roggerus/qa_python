@@ -26,6 +26,7 @@ class TestBooksCollector:
         'A' * 41
     ])
 
+
     def test_add_new_book_empty_name_does_not_add_book(self, collector, book_name):
         collector.add_new_book(book_name)
         assert len(collector.get_books_genre()) == 0
