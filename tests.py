@@ -100,6 +100,7 @@ class TestBooksCollector:
         collector.add_book_in_favorites(book_name)
         assert collector.favorites.count(book_name) == 1
 
+
     def test_delete_book_from_favorites_removes_book(self, collector):
         collector.add_new_book('Гарри Поттер')
         collector.add_book_in_favorites('Гарри Поттер')
